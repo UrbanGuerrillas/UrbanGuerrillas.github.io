@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #05070a;
+  color: #eee;
+  margin: 0;
+}
+
+header, footer {
+  background: #111722;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: #9fd3ff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+h1, h2, h3 {
+  color: #f0f4ff;
+}
+
+.card {
+  background: #151b26;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+ul {
+  padding-left: 20px;
+}
