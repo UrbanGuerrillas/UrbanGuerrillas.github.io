@@ -1,9 +1,15 @@
 body {
   font-family: Arial, sans-serif;
-  background: #05070a;
-  color: #eee;
   margin: 0;
+  padding: 0;
+  background-image: url('ug-squad-ed.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #eee;
 }
+
 
 header, footer {
   background: #111722;
