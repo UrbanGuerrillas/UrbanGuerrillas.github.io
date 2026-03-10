@@ -1,182 +1,129 @@
-/* ========== GLOBAL RESET & BASE ========== */
-* {
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Guerrillas – History</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    color: #f2f2f2;
-    background-color: #050505;
-}
+<body>
 
-/* GLOBAL URBAN CONCRETE BACKGROUND */
-body {
-    background-image: url("images/ug_concrete_bg.jpg"); /* optional site-wide texture */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="history.html" class="active">History</a>
+        <a href="roster.html">Roster</a>
+        <a href="squad.html">Squad</a>
+        <a href="elite.html">Elite Dangerous</a>
+    </nav>
 
-/* ========== TOP NAVIGATION ========== */
-.topnav {
-    background: rgba(5, 5, 5, 0.95);
-    border-bottom: 2px solid #b30000;
-    text-align: center;
-    padding: 8px 0;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
+    <div class="container">
 
-.topnav a {
-    color: #f2f2f2;
-    padding: 10px 18px;
-    text-decoration: none;
-    font-size: 17px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+        <!-- UG Motto -->
+        <section class="card">
+            <h1>Urban Guerrillas</h1>
+            <h2><em>“First In, Last Out”</em></h2>
+            <p>The motto that defined every operation, every deployment, and every member who carried the UG tag. 
+            It represents courage, loyalty, and the willingness to lead from the front.</p>
+        </section>
 
-.topnav a:hover {
-    background-color: #b30000;
-}
+        <!-- UG Origin Story -->
+        <section class="card">
+            <h2>Origins (2002)</h2>
+            <p>The Urban Guerrillas were founded in 2002 during the early tactical shooter era. 
+            Built on teamwork, precision, and a no‑nonsense approach to squad operations, UG quickly became known for 
+            discipline, unity, and a signature aggressive tactical style.</p>
+        </section>
 
-.topnav a.active {
-    background-color: #660000;
-}
+        <!-- Founders Lineage -->
+        <section class="card">
+            <h2>Founders – Identity Lineage</h2>
+            <p>The UG identity has always been preserved across platforms and eras. 
+            The founders carried their names forward into modern games while honoring their original tags.</p>
 
-/* ========== LAYOUT ========== */
-.page-wrap {
-    min-height: calc(100vh - 60px);
-    padding: 30px 0 40px 0;
-}
+            <ul>
+                <li>
+                    <strong>UG MajBoyington</strong><br>
+                    Originally: <strong>UG Worm Pile</strong><br>
+                    Elite Dangerous: <strong>CMDR UG Col Boyington</strong>
+                </li>
 
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
-}
+                <li>
+                    <strong>UG Jo Moma</strong><br>
+                    Elite Dangerous: <strong>CMDR UG MOMA</strong>
+                </li>
+            </ul>
 
-/* ========== CARDS ========== */
-.card {
-    background: rgba(10, 10, 10, 0.88);
-    border: 1px solid #333;
-    border-left: 4px solid #b30000;
-    padding: 20px 24px;
-    margin-bottom: 20px;
-    border-radius: 6px;
-    box-shadow: 0 0 18px rgba(0, 0, 0, 0.7);
-}
+            <p>This lineage forms the backbone of UG history and preserves the continuity of the clan’s identity.</p>
+        </section>
 
-/* ========== HEADINGS & TEXT ========== */
-h1, h2, h3 {
-    margin-top: 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+        <!-- Evolution -->
+        <section class="card">
+            <h2>Evolution of the Clan</h2>
+            <p>Over the years, UG expanded across multiple games and platforms while maintaining its tactical roots. 
+            From early PC shooters to modern space combat simulations, the Urban Guerrillas adapted, evolved, and 
+            continued to operate with the same discipline and unity that defined the founders.</p>
+        </section>
 
-h1 {
-    font-size: 32px;
-    color: #ff3333;
-}
+        <!-- Timeline -->
+        <section class="card">
+            <h2>UG Timeline (2002 – Present)</h2>
 
-h2 {
-    font-size: 24px;
-    color: #ff5555;
-}
+            <ul class="timeline">
 
-h3 {
-    font-size: 20px;
-    color: #ff7777;
-}
+                <li>
+                    <strong>2002 – Founding of the Urban Guerrillas</strong><br>
+                    UG is formed by UG Worm Pile (later UG MajBoyington) and UG Jo Moma. 
+                    The clan establishes its tactical identity and the motto: 
+                    <em>“First In, Last Out.”</em>
+                </li>
 
-p {
-    line-height: 1.6;
-    margin: 8px 0;
-}
+                <li>
+                    <strong>2003–2006 – Early Tactical Era</strong><br>
+                    UG becomes known for disciplined squad tactics, coordinated assaults, 
+                    and a reputation for leading from the front.
+                </li>
 
-ul {
-    margin: 8px 0 8px 20px;
-}
+                <li>
+                    <strong>2007–2012 – Expansion & Core Member Era</strong><br>
+                    The roster grows with long‑standing members including CoRad, Reapr, PUFF, 
+                    Tegu, MILITANTGURU, Major Dank, zorched, and Moko.
+                </li>
 
-/* ========== HERO (HOME PAGE) ========== */
-.hero {
-    text-align: center;
-    padding: 40px 20px 20px 20px;
-}
+                <li>
+                    <strong>2013–2018 – Cross‑Platform Evolution</strong><br>
+                    UG adapts to new games and platforms while maintaining its identity, 
+                    structure, and tactical roots.
+                </li>
 
-.hero-title {
-    font-size: 40px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #ff3333;
-}
+                <li>
+                    <strong>2019–2023 – Elite Dangerous Transition</strong><br>
+                    Founders carry their lineage into Elite Dangerous:
+                    <br>• UG MajBoyington → <strong>CMDR UG Col Boyington</strong>
+                    <br>• UG Jo Moma → <strong>CMDR UG MOMA</strong>
+                    <br>• UGPUFF → <strong>CMDR UG PUFF</strong>
+                </li>
 
-.hero-subtitle {
-    font-size: 18px;
-    color: #cccccc;
-    margin-top: 10px;
-}
+                <li>
+                    <strong>2024–Present – Preservation & Legacy Era</strong><br>
+                    The UG website is built to preserve the clan’s history, roster, lineage, 
+                    and identity for future members. The motto remains unchanged:
+                    <strong>First In, Last Out.</strong>
+                </li>
 
-.hero-image {
-    margin-top: 20px;
-    max-width: 100%;
-    border-radius: 8px;
-    border: 2px solid #b30000;
-}
+            </ul>
+        </section>
 
-/* ========== ROSTER & ELITE LISTS ========== */
-.roster-section ul,
-.elite-list ul {
-    list-style-type: none;
-    padding-left: 0;
-}
+        <!-- Modern Era -->
+        <section class="card">
+            <h2>The Modern Era</h2>
+            <p>Today, UG continues to thrive through its Elite Dangerous wing, website preservation efforts, and 
+            the ongoing commitment to honoring the clan’s legacy. The motto remains unchanged — 
+            <strong>First In, Last Out</strong>.</p>
+        </section>
 
-.roster-section li,
-.elite-list li {
-    margin: 4px 0;
-}
+    </div>
 
-.roster-section strong,
-.elite-list strong {
-    color: #ffcccc;
-}
-
-/* ========== GALLERY (ELITE IMAGES PAGE) ========== */
-.gallery {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.gallery img {
-    width: 300px;
-    max-width: 100%;
-    margin: 10px;
-    border-radius: 8px;
-    border: 2px solid #b30000;
-    box-shadow: 0 0 12px rgba(0,0,0,0.7);
-}
-
-/* ========== FOOTER ========== */
-footer {
-    text-align: center;
-    padding: 15px 0 25px 0;
-    font-size: 13px;
-    color: #888;
-}
-
-/* ========== SQUAD PAGE: BACKGROUND-ONLY ========== */
-.squad-bg {
-    background-image: url("images/ug_squad.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-/* Ensure nav stays readable on squad page */
-.squad-bg .topnav {
-    background: rgba
+</body>
+</html>
