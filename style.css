@@ -77,17 +77,17 @@ nav a.active {
 }
 
 /* ------------------------------
-   TOP-LEFT LOGO (Final Version)
+   TOP-LEFT LOGO (Balanced Version)
 --------------------------------*/
 .ug-logo {
     position: fixed;
-    top: 95px;          /* Places logo BELOW the nav bar */
+    top: 110px;        /* Sits cleanly below the nav bar */
     left: 20px;
-    z-index: 10000000;  /* Above nav, above gradient, above everything */
+    z-index: 10000000; /* Always on top */
 }
 
 .ug-logo img {
-    width: 160px;       /* Bigger, visible crest */
+    width: 130px;      /* Balanced size — not too big, not too small */
     height: auto;
     opacity: 1;
     border-radius: 10px;
