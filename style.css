@@ -74,28 +74,26 @@ nav a {
 nav a:hover,
 nav a.active {
     color: #fff;
-}
 
-/* ------------------------------
-   TOP-LEFT LOGO (Scaled Crest)
+   /* ------------------------------
+   TOP-LEFT LOGO (Final Version)
 --------------------------------*/
 .ug-logo {
     position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 999998; /* Just under the nav bar */
+    top: 95px;          /* Places logo BELOW the nav bar */
+    left: 20px;
+    z-index: 10000000;  /* Above nav, above gradient, above everything */
 }
 
 .ug-logo img {
-    width: 65px;
+    width: 160px;       /* Bigger, visible crest */
     height: auto;
-    border-radius: 6px;
-    opacity: 0.95;
+    opacity: 1;
+    border-radius: 10px;
     transition: 0.2s ease;
 }
 
 .ug-logo img:hover {
-    opacity: 1;
     transform: scale(1.05);
 }
 
