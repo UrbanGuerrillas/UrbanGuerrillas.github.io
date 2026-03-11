@@ -6,7 +6,7 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     color: #fff;
-    background-color: #000; /* Black background for all non-image pages */
+    background-color: #000;
 }
 
 .container {
@@ -16,17 +16,20 @@ body {
 }
 
 /* ------------------------------
-   NAVIGATION BAR (ALWAYS VISIBLE)
+   UNIVERSAL NAV BAR
 --------------------------------*/
 nav {
-    background-color: #111; /* Slight contrast from black */
+    background-color: #111;
     padding: 15px;
     text-align: center;
     border-bottom: 2px solid #444;
-    position: absolute;   /* Always floats above Squad background */
+
+    /* UNIVERSAL FIXES */
+    position: fixed;      /* Always stays on top */
     top: 0;
+    left: 0;
     width: 100%;
-    z-index: 9999;        /* Highest layer */
+    z-index: 999999;      /* Highest possible layer */
 }
 
 nav a {
@@ -40,6 +43,11 @@ nav a {
 nav a:hover,
 nav a.active {
     color: #fff;
+}
+
+/* Add space below nav so content doesn't hide under it */
+body {
+    padding-top: 80px;
 }
 
 /* ------------------------------
@@ -84,7 +92,6 @@ nav a.active {
     position: relative;
 }
 
-/* Dark overlay */
 .elite-background::before {
     content: "";
     position: absolute;
@@ -96,7 +103,6 @@ nav a.active {
     z-index: 0;
 }
 
-/* Content above overlay */
 .elite-content {
     position: relative;
     z-index: 1;
@@ -111,21 +117,20 @@ nav a.active {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
     min-height: 100vh;
     width: 100%;
     margin: 0;
-    padding-top: 70px; /* Space for nav bar */
+
+    /* Make room for fixed nav bar */
+    padding-top: 80px;
+
     position: relative;
 }
 
-/* Squad page: hide all content EXCEPT the nav bar */
-.squad-bg * {
+/* Hide all content inside squad page EXCEPT the nav bar */
+.squad-bg > * {
     display: none;
-}
-
-/* But allow nav bar to show */
-nav {
-    display: block !important;
 }
 
 /* ------------------------------
