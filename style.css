@@ -16,22 +16,25 @@ html, body {
 .page-background {
     position: relative;
     min-height: 100vh;
-    background-size: cover;
-    background-position: center;
+
+    /* Background image 10% smaller */
+    background-size: 90%;
+    background-position: center top;
     background-repeat: no-repeat;
+
     z-index: 0;
 }
 
-/* 🚀 EXTREME VISIBILITY + SAFARI SAFE */
+/* EXTREME VISIBILITY + SAFARI SAFE */
 .page-background::before {
     content: "";
     position: absolute;
     inset: 0;
 
-    /* Almost no darkening — background fully visible */
+    /* Almost no darkening */
     background: rgba(0, 0, 0, 0.01);
 
-    /* Stronger clarity boost */
+    /* Strong clarity boost */
     -webkit-backdrop-filter: brightness(2.0) contrast(1.22) saturate(1.20);
     backdrop-filter: brightness(2.0) contrast(1.22) saturate(1.20);
 
@@ -99,18 +102,20 @@ nav .active {
 
 
 /* ================================
-   CARD SYSTEM
+   CARD SYSTEM (More Transparent)
    ================================ */
 
 .card {
-    background: rgba(0, 0, 0, 0.45); /* slightly lighter for more background visibility */
+    background: rgba(0, 0, 0, 0.35); /* more transparent */
     padding: 25px;
     margin: 20px auto;
     max-width: 900px;
     border-left: 3px solid #00aaff;
     border-right: 3px solid #00aaff;
     border-radius: 6px;
-    backdrop-filter: blur(3px);
+
+    /* Stronger blur for readability */
+    backdrop-filter: blur(6px);
 }
 
 
