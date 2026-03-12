@@ -22,17 +22,19 @@ html, body {
     z-index: 0;
 }
 
-/* 🔥 MAX VISIBILITY VERSION (Option A)
-   - Very light overlay
-   - Strong brightness boost
-   - Slight contrast pop
-*/
+/* 🔥 MAX VISIBILITY + SAFARI FIX */
 .page-background::before {
     content: "";
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.05); /* almost no darkening */
+
+    /* SAFARI FIX — REQUIRED */
+    -webkit-backdrop-filter: brightness(1.55) contrast(1.12);
+
+    /* Standard version */
     backdrop-filter: brightness(1.55) contrast(1.12);
+
     z-index: 1;
 }
 
@@ -101,7 +103,7 @@ nav .active {
    ================================ */
 
 .card {
-    background: rgba(0, 0, 0, 0.50); /* slightly lighter for stronger background visibility */
+    background: rgba(0, 0, 0, 0.50); /* lighter for stronger background visibility */
     padding: 25px;
     margin: 20px auto;
     max-width: 900px;
