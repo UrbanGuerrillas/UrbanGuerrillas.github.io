@@ -17,26 +17,26 @@ html, body {
     position: relative;
     min-height: 100vh;
 
-    /* Background image 10% smaller */
-    background-size: 90%;
+    /* Background image fully visible and slightly smaller */
+    background-size: 90%; /* 10% smaller */
     background-position: center top;
     background-repeat: no-repeat;
 
     z-index: 0;
 }
 
-/* EXTREME VISIBILITY + SAFARI SAFE */
+/* FULL VISIBILITY + SAFARI SAFE */
 .page-background::before {
     content: "";
     position: absolute;
     inset: 0;
 
-    /* Almost no darkening */
-    background: rgba(0, 0, 0, 0.01);
+    /* No darkening — background fully visible */
+    background: rgba(0, 0, 0, 0.00);
 
-    /* Strong clarity boost */
-    -webkit-backdrop-filter: brightness(2.0) contrast(1.22) saturate(1.20);
-    backdrop-filter: brightness(2.0) contrast(1.22) saturate(1.20);
+    /* Strong clarity boost without washing out text */
+    -webkit-backdrop-filter: brightness(2.1) contrast(1.25) saturate(1.25);
+    backdrop-filter: brightness(2.1) contrast(1.25) saturate(1.25);
 
     z-index: 1;
 }
@@ -54,18 +54,20 @@ html, body {
 body, p, li {
     color: #ffffff;
     font-family: Arial, sans-serif;
-    text-shadow: 0 0 7px rgba(0, 0, 0, 0.90);
+
+    /* Stronger shadow for readability over clear background */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
 h1, h2, h3 {
     color: #f2f2f2;
-    text-shadow: 0 0 12px rgba(0, 0, 0, 1);
+    text-shadow: 0 0 14px rgba(0, 0, 0, 1);
     margin-bottom: 10px;
 }
 
 a, .accent, .highlight {
     color: #00aaff;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    text-shadow: 0 0 12px rgba(0, 0, 0, 1);
     text-decoration: none;
 }
 
@@ -79,7 +81,7 @@ a:hover {
    ================================ */
 
 nav {
-    background: rgba(0, 0, 0, 0.60);
+    background: rgba(0, 0, 0, 0.55);
     padding: 15px;
     text-align: center;
     border-bottom: 2px solid #00aaff;
@@ -89,7 +91,7 @@ nav a {
     color: #ffffff;
     margin: 0 15px;
     font-weight: bold;
-    text-shadow: 0 0 7px rgba(0, 0, 0, 1);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 1);
 }
 
 nav a:hover {
@@ -102,20 +104,21 @@ nav .active {
 
 
 /* ================================
-   CARD SYSTEM (More Transparent)
+   CARD SYSTEM — MORE TRANSLUCENT
    ================================ */
 
 .card {
-    background: rgba(0, 0, 0, 0.35); /* more transparent */
+    background: rgba(0, 0, 0, 0.28); /* more transparent */
     padding: 25px;
     margin: 20px auto;
     max-width: 900px;
+
     border-left: 3px solid #00aaff;
     border-right: 3px solid #00aaff;
     border-radius: 6px;
 
     /* Stronger blur for readability */
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(8px);
 }
 
 
@@ -147,8 +150,8 @@ footer {
     text-align: center;
     padding: 20px;
     color: #ffffff;
-    text-shadow: 0 0 7px rgba(0, 0, 0, 1);
-    background: rgba(0, 0, 0, 0.60);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    background: rgba(0, 0, 0, 0.55);
     border-top: 2px solid #00aaff;
     margin-top: 40px;
 }
