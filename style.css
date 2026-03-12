@@ -17,29 +17,27 @@ html, body {
     position: relative;
     min-height: 100vh;
 
-    /* Show the entire background image */
-    background-size: contain;
-    background-position: center top;
-    background-repeat: no-repeat;
-
-    /* Fill empty space around the image */
+    /* FULL IMAGE VISIBILITY ON ALL PAGES */
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
     background-color: black;
 
     z-index: 0;
 }
 
-/* FULL VISIBILITY + SAFARI SAFE */
+/* FULL VISIBILITY + CLARITY BOOST (SAFARI SAFE) */
 .page-background::before {
     content: "";
     position: absolute;
     inset: 0;
 
-    /* No dark overlay at all */
-    background: rgba(0, 0, 0, 0.00);
+    /* No dark overlay – background fully visible */
+    background: rgba(0, 0, 0, 0);
 
-    /* Clarity boost without washing out text */
-    -webkit-backdrop-filter: brightness(1.9) contrast(1.22) saturate(1.20);
-    backdrop-filter: brightness(1.9) contrast(1.22) saturate(1.20);
+    /* Enhance clarity of the image */
+    -webkit-backdrop-filter: brightness(2.0) contrast(1.25) saturate(1.25);
+    backdrop-filter: brightness(2.0) contrast(1.25) saturate(1.25);
 
     z-index: 1;
 }
@@ -57,8 +55,6 @@ html, body {
 body, p, li {
     color: #ffffff;
     font-family: Arial, sans-serif;
-
-    /* Stronger shadow for readability */
     text-shadow: 0 0 12px rgba(0, 0, 0, 1);
 }
 
@@ -107,11 +103,11 @@ nav .active {
 
 
 /* ================================
-   CARD SYSTEM — MORE TRANSLUCENT
+   CARD SYSTEM — TRANSLUCENT + READABLE
    ================================ */
 
 .card {
-    background: rgba(0, 0, 0, 0.22); /* more transparent */
+    background: rgba(0, 0, 0, 0.18); /* translucent glass */
     padding: 25px;
     margin: 20px auto;
     max-width: 900px;
@@ -120,8 +116,8 @@ nav .active {
     border-right: 3px solid #00aaff;
     border-radius: 6px;
 
-    /* Stronger blur for readability */
-    backdrop-filter: blur(10px);
+    /* Strong blur for readability over clear background */
+    backdrop-filter: blur(12px);
 }
 
 
