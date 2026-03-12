@@ -19,25 +19,28 @@ html, body {
 
     /* FULL IMAGE VISIBILITY ON ALL PAGES */
     background-size: contain !important;
-    background-position: center !important;
+    background-position: center center !important;
     background-repeat: no-repeat !important;
     background-color: black;
+
+    /* Prevent content from pushing image off-screen */
+    padding-top: 20px;
 
     z-index: 0;
 }
 
-/* FULL VISIBILITY + CLARITY BOOST (SAFARI SAFE) */
+/* FULL VISIBILITY + STRONG CLARITY BOOST (SAFARI SAFE) */
 .page-background::before {
     content: "";
     position: absolute;
     inset: 0;
 
-    /* No dark overlay – background fully visible */
+    /* No overlay – background fully visible */
     background: rgba(0, 0, 0, 0);
 
-    /* Enhance clarity of the image */
-    -webkit-backdrop-filter: brightness(2.0) contrast(1.25) saturate(1.25);
-    backdrop-filter: brightness(2.0) contrast(1.25) saturate(1.25);
+    /* Strongest safe clarity boost */
+    -webkit-backdrop-filter: brightness(2.35) contrast(1.35) saturate(1.30);
+    backdrop-filter: brightness(2.35) contrast(1.35) saturate(1.30);
 
     z-index: 1;
 }
@@ -103,11 +106,11 @@ nav .active {
 
 
 /* ================================
-   CARD SYSTEM — TRANSLUCENT + READABLE
+   CARD SYSTEM — ULTRA TRANSLUCENT + READABLE
    ================================ */
 
 .card {
-    background: rgba(0, 0, 0, 0.18); /* translucent glass */
+    background: rgba(0, 0, 0, 0.14); /* more translucent */
     padding: 25px;
     margin: 20px auto;
     max-width: 900px;
@@ -116,8 +119,8 @@ nav .active {
     border-right: 3px solid #00aaff;
     border-radius: 6px;
 
-    /* Strong blur for readability over clear background */
-    backdrop-filter: blur(12px);
+    /* Stronger blur for readability */
+    backdrop-filter: blur(14px);
 }
 
 
