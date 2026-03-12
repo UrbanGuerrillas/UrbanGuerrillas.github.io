@@ -22,18 +22,18 @@ html, body {
     z-index: 0;
 }
 
-/* 🔥 MAX VISIBILITY + SAFARI FIX */
+/* 🔥 MAX VISIBILITY (ALL PAGES) + SAFARI FIX */
 .page-background::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.05); /* almost no darkening */
 
-    /* SAFARI FIX — REQUIRED */
-    -webkit-backdrop-filter: brightness(1.55) contrast(1.12);
+    /* Ultra-light overlay for maximum clarity */
+    background: rgba(0, 0, 0, 0.02);
 
-    /* Standard version */
-    backdrop-filter: brightness(1.55) contrast(1.12);
+    /* Safari-safe enhanced clarity */
+    -webkit-backdrop-filter: brightness(1.85) contrast(1.18) saturate(1.15);
+    backdrop-filter: brightness(1.85) contrast(1.18) saturate(1.15);
 
     z-index: 1;
 }
@@ -103,7 +103,7 @@ nav .active {
    ================================ */
 
 .card {
-    background: rgba(0, 0, 0, 0.50); /* lighter for stronger background visibility */
+    background: rgba(0, 0, 0, 0.50);
     padding: 25px;
     margin: 20px auto;
     max-width: 900px;
