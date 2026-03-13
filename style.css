@@ -13,7 +13,7 @@ html, body {
 
 
 /* ================================
-   HERO BACKGROUND (auto-sizes to full image height)
+   HERO BACKGROUND (FIXED)
    ================================ */
 
 .page-background {
@@ -24,8 +24,8 @@ html, body {
     background-attachment: scroll;
     background-color: black;
 
-    height: auto;
-    aspect-ratio: 1 / 1; /* 1024 × 1024 */
+    /* FIX: prevent collapse */
+    height: 700px;
 
     position: relative;
     z-index: 0;
