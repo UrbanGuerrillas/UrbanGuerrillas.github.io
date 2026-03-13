@@ -144,3 +144,10 @@ footer {
     border-top: 4px solid #8b0000;
     margin-top: 40px;
 }
+
+/* FIX: Campaigns background height + nav bar offset */
+.campaigns-background {
+    background-image: url('images/Ug_logo_background.png');
+    height: 700px;      /* makes background tall enough to be visible */
+    margin-top: 80px;   /* pushes background below the fixed nav bar */
+}
