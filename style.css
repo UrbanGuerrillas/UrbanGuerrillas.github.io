@@ -21,10 +21,9 @@ html, body {
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
-    background-attachment: scroll;
     background-color: black;
 
-    /* FIX: prevent collapse */
+    /* FIX: force visible height */
     height: 700px;
 
     position: relative;
@@ -69,7 +68,6 @@ nav a:hover {
     z-index: 2;
     padding: 40px 20px;
     background: black;
-    margin-top: 0;
 }
 
 
@@ -107,15 +105,10 @@ p, li {
    PAGE BACKGROUND IMAGES
    ================================ */
 
-.home-background {
-    background-image: url('images/Ug_logo_background.png');
-}
-
-.history-background {
-    background-image: url('images/Ug_logo_background.png');
-}
-
-.roster-background {
+.home-background,
+.history-background,
+.roster-background,
+.campaigns-background {
     background-image: url('images/Ug_logo_background.png');
 }
 
@@ -133,11 +126,6 @@ p, li {
    ================================ */
 
 .campaigns-background {
-    background-image: url('images/Ug_logo_background.png');
-    background-size: contain;
-    background-position: top center;
-    background-repeat: no-repeat;
-
     height: 700px;
     margin-top: 80px;
 }
