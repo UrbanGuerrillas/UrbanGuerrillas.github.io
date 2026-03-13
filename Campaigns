@@ -9,27 +9,26 @@
 
 <body>
 
-<!-- UG LOGO BACKGROUND -->
-<div class="ug-background"></div>
+<!-- HERO BACKGROUND -->
+<div class="page-background home-background"></div>
 
 <!-- NAVIGATION -->
 <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="roster.html">Roster</a></li>
-        <li><a href="squad.html">Squad</a></li>
-        <li><a href="campaigns.html" class="active">Campaigns</a></li>
-        <li><a href="elite.html">Elite</a></li>
-    </ul>
+    <a href="index.html">Home</a>
+    <a href="roster.html">Roster</a>
+    <a href="squad.html">Squad</a>
+    <a href="campaigns.html" class="active">Campaigns</a>
+    <a href="elite.html">Elite</a>
 </nav>
 
-<!-- PAGE CONTENT -->
-<div class="content">
+<!-- CONTENT -->
+<div class="content-section">
 
     <h1>UG Campaigns</h1>
     <p class="subtitle">A complete historical record of the Urban Guerrillas across eras of combat.</p>
 
-    <section>
+    <!-- EARLY TACTICAL ERA -->
+    <div class="card">
         <h2>⭐ Early Tactical Era (2002–2005)</h2>
         <p>The birth of UG tactics — small‑unit realism, teamwork, and gritty infantry combat.</p>
         <ul>
@@ -42,9 +41,10 @@
             <li>Operation Flashpoint: Elite (2005)</li>
             <li>Call of Duty 2 (2005)</li>
         </ul>
-    </section>
+    </div>
 
-    <section>
+    <!-- MODERN WARFARE ERA -->
+    <div class="card">
         <h2>⭐ Modern Warfare Era (2006–2013)</h2>
         <p>UG enters the age of advanced tech, urban warfare, and large‑scale multiplayer combat.</p>
         <ul>
@@ -63,9 +63,10 @@
             <li>GTA V (2013)</li>
             <li>Gears of War: Judgment (2013)</li>
         </ul>
-    </section>
+    </div>
 
-    <section>
+    <!-- ADVANCED TACTICAL ERA -->
+    <div class="card">
         <h2>⭐ Advanced Tactical Era (2014–2019)</h2>
         <p>UG transitions into massive open worlds, refined gunplay, and modern battlefield systems.</p>
         <ul>
@@ -77,17 +78,22 @@
             <li>Battlefield V (2018)</li>
             <li>Gears 5 (2019)</li>
         </ul>
-    </section>
+    </div>
 
-    <section>
+    <!-- SPACE & FRONTIER ERA -->
+    <div class="card">
         <h2>⭐ Space & Frontier Era (2014–Present)</h2>
         <p>UG expands beyond Earth — long‑range operations, exploration, and interstellar combat.</p>
         <ul>
             <li>Elite Dangerous (2014–Present)</li>
         </ul>
-    </section>
+    </div>
 
 </div>
+
+<footer>
+    Urban Guerrillas © 2002–2026
+</footer>
 
 </body>
 </html>
