@@ -1,4 +1,4 @@
-/* ================================
+i7/* ================================
    GLOBAL
    ================================ */
 
@@ -155,4 +155,16 @@ footer {
     margin-top: 40px;
     color: #777;
     font-size: 0.9rem;
+}
+
+/* ================================
+   IMAGE SIZE CONTROL (FINAL FIX)
+   ================================ */
+
+.main-image {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 6px;
 }
