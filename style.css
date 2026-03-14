@@ -106,4 +106,19 @@ nav a.active {
 }
 
 .card ul {
-    margin
+    margin-left: 20px;
+    padding-left: 10px;
+    list-style-type: disc;
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #777;
+    font-size: 0.9rem;
+}
