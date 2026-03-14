@@ -11,6 +11,29 @@ html, body {
     color: #fff;
 }
 
+/* ================================
+   UNIVERSAL CONTENT SECTION
+   ================================ */
+
+.content-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 40px;
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    color: #ccc;
+}
 
 /* ================================
    HERO BACKGROUND (FINAL FIX)
@@ -23,15 +46,19 @@ html, body {
     background-repeat: no-repeat;
     background-color: black;
 
-    height: 700px;
+    height: 350px; /* FIXED — removes the giant gap */
 
-    /* FIX: push background below nav bar */
     margin-top: 80px;
-
     position: relative;
     z-index: 1;
 }
 
+/* MOBILE FIX */
+@media (max-width: 600px) {
+    .page-background {
+        height: 250px;
+    }
+}
 
 /* ================================
    NAV BAR (fixed)
@@ -43,99 +70,40 @@ nav {
     width: 100%;
     background: #000;
     border-bottom: 4px solid #8b0000;
-    padding: 18px 0;
+    padding: 10px 0;
     text-align: center;
-    z-index: 10;
+    z-index: 9999;
 }
 
 nav a {
     color: #fff;
-    margin: 0 18px;
-    font-weight: bold;
     text-decoration: none;
-    font-size: 18px;
+    margin: 0 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
-nav a:hover {
-    color: #8b0000;
+nav a:hover,
+nav a.active {
+    color: #ff4444;
 }
-
 
 /* ================================
-   CONTENT SECTION (FINAL FIX)
-   ================================ */
-
-.content-section {
-    position: relative;
-    z-index: 2;
-
-    /* FIX: push content BELOW the background */
-    margin-top: 40px;
-
-    padding: 40px 20px;
-    background: black;
-}
-
-
-/* ================================
-   CARD STYLE
+   CARD SYSTEM
    ================================ */
 
 .card {
-    background: rgba(0, 0, 0, 0.65);
-    padding: 25px;
-    margin: 20px auto;
-    max-width: 900px;
-
-    border-left: 3px solid #8b0000;
-    border-right: 3px solid #8b0000;
-    border-radius: 6px;
-}
-
-
-/* ================================
-   HEADINGS + TEXT
-   ================================ */
-
-h1, h2, h3 {
-    color: #f2f2f2;
-    text-shadow: 0 0 16px black;
-}
-
-p, li {
-    text-shadow: 0 0 12px black;
-}
-
-
-/* ================================
-   PAGE BACKGROUND IMAGES
-   ================================ */
-
-.home-background,
-.history-background,
-.roster-background,
-.campaigns-background {
-    background-image: url('images/Ug_logo_background.png');
-}
-
-.elite-background {
-    background-image: url('images/UG_Elite.png');
-}
-
-.squad-background {
-    background-image: url('images/UG_Squad.png');
-}
-
-
-/* ================================
-   FOOTER
-   ================================ */
-
-footer {
-    text-align: center;
+    background: rgba(20, 20, 20, 0.85);
+    border: 2px solid #8b0000;
+    border-radius: 8px;
     padding: 20px;
-    color: #fff;
-    background: rgba(0,0,0,0.65);
-    border-top: 4px solid #8b0000;
-    margin-top: 40px;
+    margin-bottom: 25px;
 }
+
+.card h2 {
+    margin-top: 0;
+    color: #ff4444;
+}
+
+.card ul {
+    margin
