@@ -63,36 +63,36 @@ h1 {
 /* ================================
    PAGE BACKGROUND IMAGES
    ================================ */
+/*  
+   IMPORTANT:
+   Your actual file is named:
+   Ug_logo_background.png
+   (capital U, lowercase g)
+*/
 
 .home-background {
-    background-image: url('images/ug_logo_background.png');
+    background-image: url('images/Ug_logo_background.png');
 }
 
 .history-background {
-    background-image: url('images/ug_logo_background.png');
+    background-image: url('images/Ug_logo_background.png');
 }
 
 .roster-background {
-    background-image: url('images/ug_logo_background.png');
+    background-image: url('images/Ug_logo_background.png');
 }
 
 .squad-background {
-    background-image: url('images/ug_logo_background.png');
+    background-image: url('images/Ug_logo_background.png');
 }
 
 .elite-background {
-    background-image: url('images/ug_logo_background.png');
+    background-image: url('images/Ug_logo_background.png');
 }
 
 .campaigns-background {
-    background-image: url('images/ug_logo_background.png');
+    background-image: url('images/Ug_logo_background.png');
 }
-
-/*  
-   NOTE:
-   All pages currently use the same UG logo background.
-   If you want unique backgrounds per page, tell me and I’ll generate the correct CSS + filenames.
-*/
 
 /* ================================
    NAV BAR (fixed)
